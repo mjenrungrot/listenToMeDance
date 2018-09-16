@@ -24,7 +24,6 @@ def downloadSongs(csv_path, fps=30, audio_fs=44100):
                          bitrate=128e3,
                          fps=audio_fs)
     print("Finished preprocessing {:} [{:} - {:}]".format(song_identifier, song['song_name'], song['artist']))
-    break
 
 if __name__ == '__main__':
   downloadSongs('mini_dataset.csv')
